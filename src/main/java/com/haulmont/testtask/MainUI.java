@@ -1,5 +1,6 @@
 package com.haulmont.testtask;
 
+import com.haulmont.testtask.ui.MainLayout;
 import com.vaadin.annotations.Theme;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.ui.*;
@@ -10,12 +11,11 @@ public class MainUI extends UI {
 
     @Override
     protected void init(VaadinRequest request) {
-        VerticalLayout layout = new VerticalLayout();
-        layout.setSizeFull();
-        layout.setMargin(true);
+        addMainLayout();
+    }
 
-        layout.addComponent(new Label("Main UI"));
-
+    private void addMainLayout() {
+        MainLayout layout = new MainLayout();
         setContent(layout);
     }
 }

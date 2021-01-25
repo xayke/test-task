@@ -10,7 +10,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <vaadin.version>7.6.7</vaadin.version>
+        <vaadin.version>8.3.0</vaadin.version>
+        <hsqld.version>2.5.1</hsqld.version>
     </properties>
 
     <repositories>
@@ -62,6 +63,27 @@
             <artifactId>servlet-api</artifactId>
             <version>2.4</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>${hsqld.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>sqltool</artifactId>
+            <version>${hsqld.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

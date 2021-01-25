@@ -17,3 +17,11 @@ Build and Run
 	```
 
 2. Open `http://localhost:8080` in a web browser.
+
+3. Use application :)  
+     
+
+   **(Note: when you launch it and press the button for the 
+   first time it's may be lagged for a sec. The reason is that 
+   *database/DatabaseService* creating *INSTANCE*, 
+   checking tables on existence, create them (if not exists) and fill them (if they are empty))**

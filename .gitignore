@@ -1,5 +1,8 @@
 .idea
 target/
+db/
+logs/
 *.iml
 *.ipr
 *.iws
+*.log
